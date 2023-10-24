@@ -1,5 +1,0 @@
-These are codes for pratical_2.
- 
-To compile:
-   gfortran -o Conversion Conversion.f90 
-   gfortran -o Sum Sum.f90 
