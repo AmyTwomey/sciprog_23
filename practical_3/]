@@ -1,0 +1,19 @@
+Program Trap
+
+  implicit none 
+  integer (kind=4) :: N=12, i
+  real (kind=4) :: a=0.0, b_deg=60.0
+  real (kind=4) :: pi, b_rad, area, mult_rad
+
+! Convert b=pi/3 to radians
+  pi = atan(1.0) * 4.0
+  b_rad=(pi*b_deg)/180.0
+
+! Sum tan(a)+tan(b) where a and b are in radians
+  area = tan(a)+tan(b_rad);
+  write(6,*) 'Initial area (sun at x(0) and x(12)), area 
+
+
+   i=5
+   do while(i .lt. 60)
+   area=area+2*tan((pi*i)/180.0) 
